@@ -17,8 +17,9 @@ from umqtt.simple import MQTTClient
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 #wlan.connect("Wi-Fi AP","PASSWORD")
-#wlan.connect("AA_7","Badchin6")
-wlan.connect("SKYWORTH-1D65","322042285")
+#wlan.connect("SKYWORTH-1D65","322042285")
+wlan.connect("Ball","11223344")
+
 time.sleep(5)
 print("Is the WIFI connected? ",wlan.isconnected())
 
@@ -28,7 +29,7 @@ mqtt_server = 'broker.hivemq.com'
 client_id = 'bigles'
 topic_pub = b'TomsHardware'
 topic_sub = b'TomsHardware' # code for subscribing
-topic_msg = b'Saigon A Random Event'
+topic_msg = b'Sg A Random Event'
 #topic_msg = b'Movement Detected'
 
 # This function is part of code for subscribe
